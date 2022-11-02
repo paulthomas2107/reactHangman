@@ -58,6 +58,7 @@ export function Keyboard({
             className={`${styles.btn} ${isActive ? styles.active : ''} ${
               isInactive ? styles.inactive : ''
             }`}
+            disabled={isInactive || isActive}
             key={key}
           >
             {key}

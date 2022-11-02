@@ -85,13 +85,11 @@ const LEFT_LEG = (
   ></div>
 );
 
-
 const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, LEFT_LEG, RIGHT_LEG];
 
 type HangmanDrawingProps = {
-    numberOfGuesses: number
+  numberOfGuesses: number;
 };
-
 
 export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
   return (

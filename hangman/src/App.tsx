@@ -51,6 +51,7 @@ function App() {
     const handler = (e: KeyboardEvent) => {
       const key = e.key;
       if (key !== 'Enter') return;
+      e.preventDefault()
       setWordToGuess(getWord());
     };
 
